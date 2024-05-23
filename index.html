@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+</head>
+<body class="bg-gray-300">
+    <div class="container mx-auto p-4">
+        <input type="file" id="fileInput" />
+        <button id="startButton" class="bg-blue-500 text-white px-4 py-2 rounded">Start</button>
+        <button id="clearButton" class="bg-red-500 text-white px-4 py-2 rounded">Clear</button>
+        <button id="againButton" class="bg-green-500 text-white px-4 py-2 rounded">Again</button>
+        <button id="extendButton" class="bg-purple-500 text-white px-4 py-2 rounded">Extend Window</button>
+        <div id="category-title-container"></div> <!-- New container for category title -->
+        <div id="card-container" class="grid grid-cols-5 gap-4 mt-4"></div>
+    </div>
+    <script type="module" src="database.js"></script>
+    <script type="module" src="card.js"></script>
+    <script type="module" src="output.js"></script>
+</body>
+</html>
